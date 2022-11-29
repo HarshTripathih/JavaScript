@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.1.min.js"></script>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            var JsonObj = [
+                {
+                    'Name':'Harsh',
+                    'Branch':'Btech',
+                    'college':'LPU',
+                    'Graduation Year':2024
+                },
+                {
+                    'Name':'Siddharth',
+                    'Branch':'Btech',
+                    'college':'LPU',
+                    'Graduation Year':2026
+                },
+                {
+                    'Name':'Ankit',
+                    'Branch':'Btech',
+                    'college':'LPU',
+                    'Graduation Year':2024
+                },
+            ];
+
+            var result = JSON.stringify(JsonObj);
+            $("#resresult").html(result)
+         });
+    </script>
+</head>
+<body>
+    <div id="resresult"></div>
+</body>
+</html>

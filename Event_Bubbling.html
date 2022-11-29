@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:antiquewhite;">
+    <div style="background-color:grey;color:red;font-size: 30px;">I am div Click Me!</div><br/><br/>
+    <p style="color:green;font-size: 30px;">I am Paragraph cxlick me!</p><br/><br/>
+    <h1 style="color:blue;">I am Header tag click me!</h1><br/><br/>
+    <script>
+        var body = document.getElementsByTagName("body")[0]
+        var div = document.getElementsByTagName("div")[0]
+        var p = document.getElementsByTagName("p")[0]
+        var h1 = document.getElementsByTagName("h1")[0]
+        body.addEventListener("click",()=>{
+            alert("Body is clicked");
+        })
+        div.addEventListener("click",()=>{
+            alert("Div Box is Clicked")
+        })
+        p.addEventListener("click",()=>{
+            alert("Paragraph tag is clicked")
+        })
+        h1.addEventListener("click",()=>{
+            alert("header tag is clicked by you")
+        })
+    </script>
+</body>
+</html>
